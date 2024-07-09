@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
+html, body {
+  font-family: "Dancing Script", cursive;
+  background: linear-gradient(135deg, #EF9595, #e3b1f8);
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  color: blanchedalmond; /* Default text color */
+}
+
+/* Navbar */
+.navbar {
+  background: linear-gradient(135deg, #EF9595, #e3b1f8);
+  min-height: 17vh;
+}
+
+.navbar-brand {
+  color: blanchedalmond;
+  size:1.5rem;
+}
+
+.navbar-toggler-icon {
+  background-color: rgba(236, 202, 174, 0.5); /* rgba for #ECCEAE */
+}
+
+.nav-link {
+  color: blanchedalmond;
+  size:1.5rem;
+
+}
+
+.nav-link:hover {
+  color: #ECCEAE;
+}
+
+/* Modal */
+.modal-content {
+  background-color: #131842; /* bg-dark */
+  color: #FBF6E2;
+}
+
+.btn-close-white {
+  filter: invert(1);
+}
+
+.modal-header h3 {
+  color: #FBF6E2;
+}
+
+.modal-body label {
+  color: #FBF6E2;
+}
+
+.form-control {
+  background-color: #131842;
+  color: #FBF6E2;
+  border: 1px solid #ECCEAE;
+}
+
+.form-control::placeholder {
+  color: #ECCEAE;
+}
+
+.btn-primary {
+  background-color: #E68369;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #ECCEAE;
+}
+
+.btn-success {
+  background-color: #E68369;
+  border: none;
+}
+
+.btn-success:hover {
+  background-color: #ECCEAE;
+}
+
+.btn-info {
+  background-color: #E68369;
+  border: none;
+}
+
+.btn-info:hover {
+  background-color: #ECCEAE;
+}
+
+.btn-dark {
+  background-color: #131842;
+  border: none;
+}
+
+.btn-dark:hover {
+  background-color: #E68369;
+}
+
+/* Container */
+.container {
+  padding: 1rem;
+}
+
+.list-group {
+  list-style-type: none;
+  padding: 0;
+}
+
+.list-group .list-group-item {
+  background-color: #131842;
+  color: #FBF6E2;
+  border: 1px solid #ECCEAE;
+}
+.googleLogin{
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      border: 2px solid #22D4FD;
+      width: 378px;
+      text-align: center;
+      border-radius: 8px;
+      font-size: 24px;
+      font-weight: 600;
+      padding: 21.5px 0;
+      text-decoration: none;
+}
+
+.avatar-creator{
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: 1.5rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: blanchedalmond;
+}
+
+.contgenero{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.btngenero{
+  background-color: transparent;
+  border:none;
+}
+
+.contgenero_button_img{
+  height: 100px; /* Ajusta la altura según sea necesario */
+  width: 100px;
+  margin: 0 5px; /* Ajusta el margen según sea necesario */
+}
+
+.nav-link:hover {
+  color: #ECCEAE;
+}
+
+/* Modal */
+.modal-content {
+  background-color: #131842; /* bg-dark */
+  color: #FBF6E2;
+}
+
+.btn-close-white {
+  filter: invert(1);
+}
+
+.modal-header h3 {
+  color: #FBF6E2;
+}
+
+.modal-body label {
+  color: #FBF6E2;
+}
+
+.form-control {
+  background-color: #131842;
+  color: #FBF6E2;
+  border: 1px solid #ECCEAE;
+}
+
+.form-control::placeholder {
+  color: #ECCEAE;
+}
+
+.btn-primary {
+  background-color: #E68369;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #ECCEAE;
+}
+
+.btn-success {
+  background-color: #E68369;
+  border: none;
+}
+
+.btn-success:hover {
+  background-color: #ECCEAE;
+}
+
+.btn-info {
+  background-color: #E68369;
+  border: none;
+}
+
+.btn-info:hover {
+  background-color: #ECCEAE;
+}
+
+.btn-dark {
+  background-color: #131842;
+  border: none;
+}
+
+.btn-dark:hover {
+  background-color: #E68369;
+}
+
+/* Container */
+.container {
+  padding: 1rem;
+}
+
+.list-group {
+  list-style-type: none;
+  padding: 0;
+}
+
+.list-group .list-group-item {
+  background-color: #131842;
+  color: #FBF6E2;
+  border: 1px solid #ECCEAE;
+}
+.googleLogin{
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      border: 2px solid #22D4FD;
+      width: 378px;
+      text-align: center;
+      border-radius: 8px;
+      font-size: 24px;
+      font-weight: 600;
+      padding: 21.5px 0;
+      text-decoration: none;
+}
+
+.avatar-creator{
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: 1.5rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: blanchedalmond;
+}
+
+.contgenero{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.btngenero{
+  background-color: transparent;
+  border:none;
+}
+
+.contgenero_button_img{
+  height: 100px; /* Ajusta la altura según sea necesario */
+  width: 100px;
+  margin: 0 5px; /* Ajusta el margen según sea necesario */
+}
+
+.h4_index{
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: 1.5rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: blanchedalmond;
+}
+
+.imagencreadas{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 10px;
+}
