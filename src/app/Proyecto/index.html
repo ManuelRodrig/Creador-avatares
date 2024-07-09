@@ -1,0 +1,137 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/src/app/Proyecto/avatar.png" type="image/png">
+    <title>Avatar Creator</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <link rel="stylesheet" href="Style.css">
+</head>
+
+<body>
+    <div class="contenedor-principal">
+        <div>
+            <h1>Avatar Creator</h1>
+        </div>
+        <div class="contenedor-secundario">
+            <div class="avatar-creados">
+                <div>
+                    <h1>Avatares creados</h1>
+                </div>
+
+                <div class="avatar-preview2">
+                    <div id="avatar-list" class="rasgos">
+                        
+                    </div>
+                </div>
+
+                <div>
+                    <h1>lista de avatares</h1>
+                </div>
+
+                <div>
+                    <button onclick="loadAvatarList()">Cargar Avatares</button>
+                    <div id="list" class="lista">
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="avatar-creator">
+                <div>
+                    <h1>Creacion de Avatares</h1>
+                </div>
+                <div class="avatar-preview">
+                    <div class="rasgos">
+                        <img id="avatar-face" src="">
+                        <img id="avatar-clothes" src="">
+                        <img id="avatar-hair" src="">
+                        <img id="avatar-eyes" src="">
+                        <img id="avatar-mouth" src="">
+                        <img id="avatar-accessory" src="">
+
+                    </div>
+                </div>
+                <div class="controls">
+                    <div class="control" id="body-control">
+                        <h3>Cuerpos</h3>
+                        <button class="prev" onclick="prevFeature('face',genero)">⬅️</button>
+                        <button class="next" onclick="nextFeature('face',genero)">➡️</button>
+                    </div>
+                    <div class="control" id="hair-control">
+                        <h3>Cabello</h3>
+                        <button class="prev" onclick="prevFeature('hair',genero)">⬅️</button>
+                        <button class="next" onclick="nextFeature('hair',genero)">➡️</button>
+                    </div>
+                    <div class="control" id="eyes-control">
+                        <h3>Ojos</h3>
+                        <button class="prev" onclick="prevFeature('eyes',genero)">⬅️</button>
+                        <button class="next" onclick="nextFeature('eyes',genero)">➡️</button>
+                    </div>
+                    <div class="control" id="mouth-control">
+                        <h3>Bocas</h3>
+                        <button class="prev" onclick="prevFeature('mouth',genero)">⬅️</button>
+                        <button class="next" onclick="nextFeature('mouth',genero)">➡️</button>
+                    </div>
+                    <div class="control" id="accessory-control">
+                        <h3>Accesorios</h3>
+                        <button class="prev" onclick="prevFeature('accessory',genero)">⬅️</button>
+                        <button class="next" onclick="nextFeature('accessory',genero)">➡️</button>
+                    </div>
+                    <div class="control" id="clothes-control">
+                        <h3>Ropa</h3>
+                        <button class="prev" onclick="prevFeature('clothes',genero)">⬅️</button>
+                        <button class="next" onclick="nextFeature('clothes',genero)">➡️</button>
+                    
+                    </div>
+
+                    <div><button onclick="changeBackgroundImage()">Cambiar Color de fondo</button></div>
+                </div>
+                <div class="controls">
+                    <h3>Colores</h3>
+                </div>
+                <div class="controls">
+                    <div class="control" id="hair-control">
+                        <h3>Cabello</h3>
+                        <button class="prev" onclick="prevFeature2('hair',genero)">⬅️</button>
+                        <div class="color-box" id="hair-color"></div>
+                        <button class="next" onclick="nextFeature2('hair',genero)">➡️</button>
+                    </div>
+                    <div class="control" id="eyes-control">
+                        <h3>Ojos</h3>
+                        <button class="prev" onclick="prevFeature2('eyes',genero)">⬅️</button>
+                        <div class="color-box" id="eyes-color"></div>
+                        <button class="next" onclick="nextFeature2('eyes',genero)">➡️</button>
+                    </div>
+                    <div class="control" id="mouth-control">
+                        <h3>Bocas</h3>
+                        <button class="prev" onclick="prevFeature2('mouth',genero)">⬅️</button>
+                        <div class="color-box" id="mouth-color"></div>
+                        <button class="next" onclick="nextFeature2('mouth',genero)">➡️</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="contenedor-terciario">
+            <div class="contenedor-terciario">
+                <button class="back" onclick="window.location.href = '/src/index.html';"></button>
+                <button class="save" onclick="captureAvatar()"></button>
+                <button class="download" onclick="downloadAvatar()"></button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let genero = "Mujer";  // Variable global para el género
+        document.addEventListener('DOMContentLoaded', function () {
+            // Obtener el valor del género de la URL
+            const urlParams = new URLSearchParams(window.location.search);
+            genero = urlParams.get('genero') || genero; // Actualizar genero global
+        });
+    </script>
+    <script src="funcionalidad.js"></script>
+</body>
+</html>

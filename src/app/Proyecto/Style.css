@@ -1,0 +1,370 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Asegura que el fondo cubra al menos la altura de la ventana */
+    background: linear-gradient(135deg, rgb(252, 228, 193), #e3b1f8);
+    margin: 0;
+    color: rgb(0, 0, 0);
+}
+
+.avatar-creator {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*border: 1px solid #000;*/
+}
+
+.avatar-creados{
+    display: flex;
+    width: 600px;
+    margin-right: 10rem;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contenedor-principal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contenedor-secundario{
+    display: flex;
+    justify-content: space-between; /* Distribuye el espacio uniformemente entre los elementos secundarios */
+    flex-direction: row;
+    width: 100%; /* Asegúrate de que el contenedor ocupe el ancho completo del padre */;
+}
+
+.avatar-preview {
+    display: flex;
+    flex-direction: column;
+    height: 350px; /* Hacemos la altura igual al ancho */
+    width: 350px;  /* Aseguramos que el ancho sea igual a la altura */
+    margin-bottom: 2rem;
+    border: solid white;
+    background-image: url('Botones/background2.svg'); 
+    background-size: cover; 
+    background-position: center; 
+    border-radius: 50%; /* Aplicamos un borde redondeado del 50% para hacerlo circular */
+    overflow: hidden; /* Esto es opcional pero puede ser útil si quieres que el contenido dentro del círculo se recorte */
+}
+
+.avatar-preview2{
+    display: flex;
+    flex-direction: column;
+    height: 340px;
+    width: 245px;
+    margin-bottom: 2rem;
+    border: solid white;
+}
+
+.rasgos {
+    position: relative;
+    width: 200px; /* ajusta el tamaño según sea necesario */
+    height: 200px;
+}
+
+.rasgos img {
+    position: absolute;
+}
+
+#avatar-hair {
+    top: 3rem;
+    left: 3.5rem;
+}
+
+#avatar-eyes {
+    top: 7.5rem;
+    left: 11.5rem;
+}
+
+#avatar-mouth {
+    top: 11.5rem;
+    left: 12.2rem;
+}
+
+#avatar-face{
+    top: 4.5rem;
+    left: 4.8rem;
+}
+
+#avatar-accessory {
+    top: 8.2rem;
+    left: 8.1rem;
+}
+
+#avatar-clothes {
+    top: 12.5rem;
+    left: 3rem;
+}
+
+.controls {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 1px;
+    margin-bottom: 1px;
+}
+
+.control{
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.btngenero{
+    background-color: transparent;
+}
+
+button {
+    background-color: #3498db;
+    border: none;
+    color: white;
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+.color-box {
+    display: inline-block;
+    width: 30px;  /* Ancho del cuadro */
+    height: 30px; /* Altura del cuadro */
+    margin: 0 10px;  /* Espacio horizontal entre los botones */
+    background-color: #ffffff;  /* Color de fondo inicial */
+}
+
+.contgenero{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.contgenero button img {
+    height: 100px; /* Ajusta la altura según sea necesario */
+    width: 100px;
+    margin: 0 5px; /* Ajusta el margen según sea necesario */
+}
+
+.contenedor-terciario{
+    display: flex;
+    justify-content: space-between; /* Distribuye el espacio uniformemente entre los botones */
+    align-items: center; /* Alinea los botones verticalmente en el centro */
+    width: 100%; /* Asegúrate de que el contenedor ocupe el ancho completo del padre */
+}
+
+.contenedor-terciario button {
+    width: 75px;  /* Ajusta el tamaño del botón */
+    height: 75px; /* Ajusta el tamaño del botón */
+    background-size: contain; /* Ajusta el tamaño de la imagen para que se contenga dentro del botón */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-position: center; /* Centra la imagen dentro del botón */
+    background-color: transparent; /* Hace el fondo del botón transparente */
+    border: none;  /* Elimina el borde del botón */
+    cursor: pointer; /* Cambia el cursor al pasar por el botón */
+    outline: none; /* Elimina el contorno al hacer clic en el botón */
+    padding: 0; /* Elimina cualquier padding */
+    margin: 0; /* Elimina cualquier margen */
+}
+
+.contenedor-terciario .back {
+    background-image: url('Botones/Polygon\ 1.png'); /* Ruta a la imagen del botón back */
+}
+
+.contenedor-terciario .save{
+    background-image: url('Botones/save.png');
+}
+
+.contenedor-terciario .download {
+    background-image: url('Botones/Group\ 7.png'); /* Ruta a la imagen del botón download */
+}
+
+.lista{
+    display: flex;
+    flex-direction: column;
+    height: 340px;
+    width: 500px;
+    margin-bottom: 2rem;
+    border: solid white;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+  
+.form_area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #EDDCD9;
+    height: auto;
+    width: auto;
+    border: 2px solid #264143;
+    border-radius: 20px;
+    box-shadow: 3px 4px 0px 1px #E99F4C;
+}
+  
+.title {
+    color: #264143;
+    font-weight: 900;
+    font-size: 1.5em;
+    margin-top: 20px;
+}
+  
+.sub_title {
+    font-weight: 600;
+    margin: 5px 0;
+    color:#000;
+}
+  
+.form_group {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    margin: 10px;
+}
+  
+.form_style {
+    outline: none;
+    border: 2px solid #264143;
+    box-shadow: 3px 4px 0px 1px #E99F4C;
+    width: 290px;
+    padding: 12px 10px;
+    border-radius: 4px;
+    font-size: 15px;
+}
+  
+.form_style:focus, .btn:focus {
+    transform: translateY(4px);
+    box-shadow: 1px 2px 0px 0px #E99F4C;
+}
+  
+.btn {
+    padding: 15px;
+    margin: 25px 0px;
+    width: 290px;
+    font-size: 15px;
+    background: #DE5499;
+    border-radius: 10px;
+    font-weight: 800;
+    box-shadow: 3px 3px 0px 0px #E99F4C;
+}
+  
+.btn:hover {
+    opacity: .9;
+}
+  
+.link {
+    font-weight: 800;
+    color: #264143;
+    padding: 5px;
+}
+
+/* Media Queries */
+@media (max-width: 1024px) {
+    .avatar-creados {
+        width: 100%;
+        margin-right: 0;
+    }
+    
+    .contenedor-secundario {
+        flex-direction: column;
+    }
+
+    .avatar-preview {
+        height: 300px;
+        width: 300px;
+    }
+
+    .avatar-preview2 {
+        width: 100%;
+    }
+
+    .rasgos {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+@media (max-width: 768px) {
+    .contenedor-secundario {
+        align-items: center;
+    }
+
+    .avatar-preview {
+        height: 250px;
+        width: 250px;
+    }
+
+    .control {
+        margin: 10px;
+    }
+
+    button {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    .contenedor-terciario button {
+        width: 60px;
+        height: 60px;
+    }
+
+    .form_style {
+        width: 250px;
+    }
+
+    .btn {
+        width: 250px;
+    }
+}
+
+@media (max-width: 480px) {
+    .avatar-preview {
+        height: 200px;
+        width: 200px;
+    }
+
+    .form_style {
+        width: 200px;
+    }
+
+    .btn {
+        width: 200px;
+    }
+
+    .color-box {
+        width: 25px;
+        height: 25px;
+    }
+
+    .contgenero button img {
+        height: 75px;
+        width: 75px;
+    }
+
+    .contenedor-terciario button {
+        width: 50px;
+        height: 50px;
+    }
+
+    .title {
+        font-size: 1.2em;
+    }
+
+    .sub_title {
+        font-size: 0.9em;
+    }
+}

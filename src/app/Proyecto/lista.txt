@@ -1,0 +1,2 @@
+
+[{"id":"avatar-face","src":"Mujer/face2.png"},{"id":"avatar-clothes","src":"Mujer/clothes1.png"},{"id":"avatar-hair","src":"Mujer/hair1.png"},{"id":"avatar-eyes","src":"Mujer/eyes2.png"},{"id":"avatar-mouth","src":"Mujer/mouth2.png"},{"id":"avatar-accessory","src":"Mujer/accessory4.png"}]
